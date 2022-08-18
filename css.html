@@ -5,17 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>css代码规则</title>
+    <style>
+      p {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      .pink {
+        border: 1px solid black;
+      }
+      .mp {
+        margin: 0px;
+      }
+      .pp {
+        padding: 0px;
+      }
+      .bp {
+        background-color: pink;
+      }
+      .flex {
+        display: flex contents;
+      }
+    </style>
   </head>
-  <body style="max-width: 703px; margin: 30px auto; line-height: 1.7">
-    <p><b>css语法：</b></p>
-    <p>CSS 规则由两个主要的部分构成：选择器、声明</p>
-    <p>选择器:通常是需要改变样式的 HTML 元素</p>
-    <p>声明:由一个属性和一个值组成</p>
-    <p></p>
-    <p><b>css盒子模型：</b></p>
-    <p>Margin(外边距) - 清除边框外的区域，外边距是透明的</p>
-    <p>Border(边框) - 围绕在内边距和内容外的边框</p>
-    <p>Padding(内边距) - 清除内容周围的区域，内边距是透明的</p>
-    <p>Content(内容) - 盒子的内容，显示文本和图像</p>
+  <body class="flex">
+    <div style="flex: 1">
+      <p class="pink"><b>css语法：</b></p>
+      <p>CSS 规则由两个主要的部分构成：选择器、声明</p>
+      <p>选择器:通常是需要改变样式的 HTML 元素</p>
+      <p>声明:由一个属性和一个值组成</p>
+      <p></p>
+      <p class="pink"><b>css盒子模型：</b></p>
+      <p class="mp pink">
+        Margin(外边距) - 清除边框外的区域，外边距是透明的<br />"margin:"可设置外边距填充
+        当前margin为0px
+      </p>
+      <p class="pink">
+        Border(边框) - 围绕在内边距和内容外的边框<br />"border:"可设置边框类型大小及颜色
+        当前边框为 1px 实线 黑色
+      </p>
+      <p class="pp pink">
+        Padding(内边距) - 清除内容周围的区域，内边距是透明的<br />"padding:"可设置外边距填充
+        当前paddong为0px
+      </p>
+      <p class="bp">
+        background-color 属性定义了元素的背景颜色<br />当前背景颜色为粉色
+      </p>
+    </div>
+    <div style="flex: 2">
+      <p>display属性设置一个元素应如何显示</p>
+    </div>
   </body>
 </html>
