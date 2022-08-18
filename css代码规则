@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css代码规则</title>
+  </head>
+  <body style="max-width: 703px; margin: 30px auto; line-height: 1.7">
+    <p><b>css语法：</b></p>
+    <p>CSS 规则由两个主要的部分构成：选择器、声明</p>
+    <p>选择器:通常是需要改变样式的 HTML 元素</p>
+    <p>声明:由一个属性和一个值组成</p>
+    <p></p>
+    <p><b>css盒子模型：</b></p>
+    <p>Margin(外边距) - 清除边框外的区域，外边距是透明的</p>
+    <p>Border(边框) - 围绕在内边距和内容外的边框</p>
+    <p>Padding(内边距) - 清除内容周围的区域，内边距是透明的</p>
+    <p>Content(内容) - 盒子的内容，显示文本和图像</p>
+  </body>
+</html>
