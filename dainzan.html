@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>点赞函数</title>
+  </head>
+  <body>
+    <button id="dzs" onclick="dianzan()">0</button>
+    <script>
+      let youshi = false;
+      function dianzan() {
+        let dzs = document.getElementById("dzs");
+        if (typeof Storage !== "NaN") {
+          if (localStorage.shu) {
+            if (youshi) {
+              youshi = false;
+              dzs = localStorage.shu = Number(localStorage.shu) - 1;
+            } else {
+              youshi = true;
+              dzs = localStorage.shu = Number(localStorage.shu) + 1;
+            }
+          } else {
+            youshi = true;
+            dzs = localStorage.shu = 1;
+          }
+          document.getElementById("dzs").innerText = dzs;
+        }
+      }
+    </script>
+  </body>
+</html>
